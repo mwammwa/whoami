@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+  <ImageView
+      android:id="@+id/imageView8"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/image4" />
+
+  <ImageView
+      android:id="@+id/imageView9"
+      android:layout_width="298dp"
+      android:layout_height="355dp"
+      android:layout_marginTop="140dp"
+      app:layout_constraintBottom_toTopOf="@+id/imageView5"
+      app:layout_constraintEnd_toEndOf="@+id/imageView8"
+      app:layout_constraintStart_toStartOf="@+id/imageView8"
+      app:layout_constraintTop_toTopOf="@+id/imageView8"
+      app:layout_constraintVertical_bias="0.539"
+      app:srcCompat="@drawable/image10" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="185dp"
+      android:layout_height="49dp"
+      android:drawableTint="#000000"
+      android:onClick="onClicktoIntroduce"
+      android:text="이름 : 코딩 뉴비"
+      android:textColor="#000000"
+      android:textSize="26dp"
+      app:layout_constraintBottom_toTopOf="@+id/textView"
+      app:layout_constraintEnd_toEndOf="@+id/imageView9"
+      app:layout_constraintStart_toStartOf="@+id/imageView9"
+      app:layout_constraintTop_toTopOf="@+id/imageView9"
+      app:layout_constraintVertical_bias="0.361" />
+
+  <Button
+      android:id="@+id/end"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="onClickEnd"
+      android:text="종료!"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="@+id/imageView8"
+      app:layout_constraintStart_toStartOf="@+id/imageView8"
+      app:layout_constraintTop_toBottomOf="@+id/imageView5"
+      app:layout_constraintVertical_bias="0.0" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="232dp"
+      android:layout_height="158dp"
+      android:text="나이 : 25세 \n특징 : 농땡이를 피우다 얻어 맞았습니다 \n &quot;으앙 잘못했어요 열심히 할게요&quot; 라고 말하고 있습니다"
+      android:textColor="#000000"
+      android:textSize="20dp"
+      app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+      app:layout_constraintEnd_toEndOf="@+id/imageView9"
+      app:layout_constraintStart_toStartOf="@+id/imageView9"
+      app:layout_constraintTop_toTopOf="@+id/imageView8"
+      app:layout_constraintVertical_bias="0.66" />
+
+  <TextView
+      android:id="@+id/outputId"
+      android:layout_width="152dp"
+      android:layout_height="53dp"
+      android:ems="10"
+      android:inputType="text"
+      android:textColor="#000000"
+      android:textSize="20dp"
+      app:layout_constraintBottom_toTopOf="@+id/textView"
+      app:layout_constraintEnd_toEndOf="@+id/imageView9"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="@+id/imageView9"
+      app:layout_constraintTop_toBottomOf="@+id/textView2"
+      app:layout_constraintVertical_bias="1.0" />
+
+  <ImageView
+      android:id="@+id/imageView5"
+      android:layout_width="325dp"
+      android:layout_height="286dp"
+      app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+      app:layout_constraintEnd_toEndOf="@+id/imageView8"
+      app:layout_constraintStart_toStartOf="@+id/imageView8"
+      app:layout_constraintTop_toTopOf="@+id/imageView8"
+      app:layout_constraintVertical_bias="0.822"
+      app:srcCompat="@drawable/image5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
